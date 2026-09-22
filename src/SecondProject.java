@@ -67,7 +67,7 @@ public class SecondProject {
         System.out.println("Üç ədəd daxil edin: ");
 
         double a2=scanner.nextDouble(), b2=scanner.nextDouble(), c2=scanner.nextDouble();
-        if ((a2 + b2 > c2) && (a2 + c2 > b2) && (b2 + c2 > a)) {
+        if ((a2 + b2 > c2) && (a2 + c2 > b2) && (b2 + c2 > a2)) {
             System.out.println("Bu tərəflərlə üçbucaq qurmaq olar.");
         } else {
             System.out.println("Bu tərəflərlə üçbucaq qurmaq OLMAZ.");
@@ -82,8 +82,33 @@ public class SecondProject {
 
         char h5=scanner.next().charAt(0);
 
+        if (h5 == '+') {
+            System.out.println("Nəticə: " + a5 + "+" + b5 + "=" + (a5 + b5));
+        }
+        else if (h5 == '-') {
+            System.out.println("Nəticə: " + a5 + "-" + b5 + "=" + (a5 - b5));
+        }
+        else if (h5 == '*') {
+            System.out.println("Nəticə: " + a5 + "*" + b5 + "=" + (a5 * b5));
+        }
+        else if (h5 == '/') {
+            if (b5 != 0) {
+                System.out.println("Nəticə: " + a5 + "/" + b5 + "=" + (a5 / b5));
+            } else {
+                System.out.println("Xəta: Sıfıra bölmək olmaz!");
+            }
+        }
 
+        // Dərs 6
 
+        int n=9;
+        int m=7;
+
+        n=n+m;
+        m=n-m;
+        n=n-m;
+        System.out.println("n= " + n);
+        System.out.println("m= " + m);
 
 
 
